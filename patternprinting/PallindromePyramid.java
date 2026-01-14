@@ -9,7 +9,7 @@ public class PallindromePyramid {
         System.out.print("Enter number of rows: ");
         int rows = sc.nextInt();
 
-        for (int i = 1; i <= rows; i++) {
+        for (int i = 1; i <= rows; i--) {
 
             for (int j = i; j < rows; j++) {
                 System.out.print("  ");
