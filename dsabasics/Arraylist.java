@@ -1,25 +1,32 @@
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Arraylist {
-        public static void main(String[] args) {
+    public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in); 
+        Scanner sc = new Scanner(System.in);
 
-        // int[] arr = {30, 20, 40, 50, 23, 89};
+        ArrayList<Integer> arr = new ArrayList<>(6);
 
-    ArrayList<Integer> arr = new ArrayList<>(6);
-    arr.add(0,10);
-    arr.add(0,20);
-     arr.add(0,30);
-    arr.add(0,40);
-    arr.add(0,50);
-    System.out.println(arr);
-     
-    // for(int i=0;i<=5;i++){
-    //     System.out.println(arr.get(i)+" ");
-    // } 
+        arr.add(0, 10);
+        arr.add(1, 20);
+        arr.add(2, 30);
+        arr.add(3, 40);
+        arr.add(4, 50);
+
+        for(int i = 0; i < arr.size(); i++){
+            System.out.println(arr.get(i));
+        }
+
+        arr.add(90);  
+
+        System.out.println();
+        System.out.println("Size: " + arr.size());
+
+        for(int i = 0; i < arr.size(); i++){
+            System.out.println(arr.get(i));
+        }
+
         sc.close();
     }
 }
