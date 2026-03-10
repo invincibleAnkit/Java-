@@ -9,5 +9,11 @@ public class indexof {
      String b="def";
      System.out.println(a.compareTo(b));
 
+
+
+           String c="physics wallah";
+          System.out.println(c.contains("alla"));
+          System.out.println(c.startsWith("alla"));
+
     }
 }
